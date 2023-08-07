@@ -1,0 +1,51 @@
+import React from 'react';
+import { Link } from 'react-scroll';
+import { NavLink } from '../constants/types';
+import profile from '../assets/logz.png';
+
+interface NavbarProps {
+  navlinks: NavLink[];
+}
+
+const Navbar: React.FC<NavbarProps> = ({ navlinks }) => {
+  return (
+    <nav
+      aria-label="Site Nav"
+      className="mx-auto max-w-screen-xl px-4 flex items-center justify-between p-4"
+    >
+      <Link
+        to="home"
+        smooth={true}
+        duration={500}
+        className="inline-flex h-20 w-20 items-center justify-center rounded-lg"
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      >
+        <img src={profile} alt="Subract Logo" width={500} height={500} />
+      </Link>
+      <ul className='flex items-center gap-2 text-sm font-medium text-gray-500'>
+        {navlinks.map((navlink) => (
+          <div className='py-4 px-4 border border-green-500' key={navlink.id}>
+            <li className="hidden lg:block">
+              <Link
+                to={navlink.url}
+                smooth={true}
+                duration={500}
+                className="rounded-lg px-3 py-2 text-green-500"
+                onClick={() => {
+                  const targetSection = document.querySelector(navlink.url);
+                  if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
+                {navlink.label}
+              </Link>
+            </li>
+          </div>
+        ))}
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;

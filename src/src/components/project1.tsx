@@ -1,8 +1,7 @@
 import pro1 from '../assets/Screenshot 2022-05-17 at 19.41.35.png';
 
-type Props = {}
 
-const project1 = (props: Props) => {
+const project1 = () => {
   return (
     <section id="projects">
   <div className="max-w-screen-xl px-4 py-8 mx-auto flex items-center sm:py-12 sm:px-6 lg:px-8">

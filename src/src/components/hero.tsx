@@ -3,11 +3,7 @@ import avatarImage from '../assets/ReadyPlayerMe-Avatar.png';
 import { Link } from 'react-scroll'; // Import Link from react-scroll
 
 
-type Props = {
-
-}
-
-const hero = (props: Props) => {
+const hero = () => {
   return (
     <>
   

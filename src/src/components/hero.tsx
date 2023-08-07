@@ -1,4 +1,3 @@
-import React from 'react'
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 import avatarImage from '../assets/ReadyPlayerMe-Avatar.png';
 import { Link } from 'react-scroll'; // Import Link from react-scroll

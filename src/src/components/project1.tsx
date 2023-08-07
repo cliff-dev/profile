@@ -1,4 +1,3 @@
-import React from 'react'
 import pro1 from '../assets/Screenshot 2022-05-17 at 19.41.35.png';
 
 type Props = {}

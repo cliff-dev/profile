@@ -2,9 +2,8 @@
 import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 
-interface Props {}
 
-export const ContactMe = (props: Props) => {
+export const ContactMe = () => {
   const formRef = useRef<HTMLFormElement>(null);
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);

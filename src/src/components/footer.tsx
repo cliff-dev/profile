@@ -4,7 +4,7 @@ interface FooterProps {
     footerlinks: FooterLink[];
 }
 
-const Footer: React.FC<FooterProps> = ({footerlinks}) => {
+const Footer: React.FC<FooterProps> = ({}) => {
     return (
         <footer aria-label="Site Footer">
         <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">

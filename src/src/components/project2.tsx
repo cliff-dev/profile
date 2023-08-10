@@ -39,7 +39,7 @@ const project2 = () => {
             xmlns="http://www.w3.org/2000/svg"
             fill=""
             viewBox="0 0 24 24"
-            stroke="currentColor"
+            stroke="#22c55e"
             className="h-8 w-8"
             >
             <path

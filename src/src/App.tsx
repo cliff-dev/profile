@@ -14,8 +14,6 @@ import { Analytics } from '@vercel/analytics/react';
 
 
 function App() {
-
-
   return (
     <Router>
     <div>
@@ -23,17 +21,12 @@ function App() {
     <Navbar navlinks={navLinks} />
     <Hero/>
     </div>
-
-    
       <CTA />
       <PROJECT1 />
       <PROJECT2 />
       <PROJECT3 />
       <CONTACTME />
-      
     <Footer footerlinks={footerLinks} />
-
-    
     </div>
     <Analytics />
     </Router>

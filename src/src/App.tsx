@@ -10,6 +10,7 @@ import PROJECT1 from './components/project1'
 import PROJECT2 from './components/project2'
 import PROJECT3 from './components/project3'
 import { BrowserRouter as Router } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
 
     
     </div>
+    <Analytics />
     </Router>
   )
 }
